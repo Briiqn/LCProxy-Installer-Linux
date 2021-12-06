@@ -10,7 +10,7 @@ clear
 exec bash "$0" "$@"
 else
 clear
-echo Waiting for java ...
+echo Waiting for java ... "(run lunar)"
 sleep 1;
 exec bash "$0" "$@"
 fi
