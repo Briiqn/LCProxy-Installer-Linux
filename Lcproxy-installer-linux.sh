@@ -20,7 +20,7 @@ wget https://raw.githubusercontent.com/Briiqn/LCProxy-Installer-Linux/main/Lcpro
 wget https://raw.githubusercontent.com/Briiqn/LCProxy-Installer-Linux/main/Lcproxy-injector-linux.sh.desktop && mv Lcproxy-injector-linux.sh.desktop ~/.config/autostart
 mkdir ~/host-backup
 sudo cp /etc/hosts ~/host-backup
-echo Created hosts backup @ "/home/*/host-backup"
+echo Created hosts backup @ "/home/$USER/host-backup"
 sudo cp ~/Downloads/hosts /etc/
 clear
 rm ~/Downloads/hosts
@@ -41,8 +41,8 @@ echo starting
 cd ~/
 chmod ugo+rwx ~/LCP/Lcproxy-injector-linux.sh
 ./LCP/Lcproxy-injector-linux.sh
-#cool song
 sleep 5;
+#cool song
 kill -9 $PPID
 else
 echo ERROR! please install/reinstall lunar and run it or check your internet connection
