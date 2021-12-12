@@ -9,12 +9,12 @@ echo Starting Installer ...
 echo ______________________
 sleep 2;
 cd ~/.lunarclient/jre/zulu*/lib/security
-wget https://assets.lunarproxy.me/server.cer && mv server.cer ~/Downloads
+mkdir ~/LCP
+wget https://assets.lunarproxy.me/server.cer && mv server.cer ~/LCP
 clear
 #test
-keytool -keystore cacerts -trustcacerts -importcert -alias lcproxy -noprompt -storepass changeit -file ~/Downloads/server.cer
+keytool -keystore cacerts -trustcacerts -importcert -alias lcproxy -noprompt -storepass changeit -file ~/LCP/server.cer
 echo server certificate test complete
-mkdir ~/LCP
 wget https://raw.githubusercontent.com/Briiqn/LCProxy-Installer-Linux/main/hosts && mv hosts ~/Downloads
 wget https://raw.githubusercontent.com/Briiqn/LCProxy-Installer-Linux/main/Lcproxy-injector-linux.sh && mv Lcproxy-injector-linux.sh ~/LCP
 wget https://raw.githubusercontent.com/Briiqn/LCProxy-Installer-Linux/main/Lcproxy-injector-linux.sh.desktop && mv Lcproxy-injector-linux.sh.desktop ~/.config/autostart
