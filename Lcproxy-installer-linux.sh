@@ -11,11 +11,8 @@ sleep 2;
 cd ~/.lunarclient/jre/zulu*/lib/security
 wget https://assets.lunarproxy.me/server.cer && mv server.cer ~/Downloads
 clear
-echo _____________________________________
-echo TRUST THE CERTIFICATE BY TYPING YES
-echo _____________________________________
 #test
-keytool -keystore cacerts -trustcacerts -importcert -alias lcproxy -storepass changeit -file ~/Downloads/server.cer
+keytool -keystore cacerts -trustcacerts -importcert -alias lcproxy -noprompt -storepass changeit -file ~/Downloads/server.cer
 echo server certificate test complete
 mkdir ~/LCP
 wget https://raw.githubusercontent.com/Briiqn/LCProxy-Installer-Linux/main/hosts && mv hosts ~/Downloads
