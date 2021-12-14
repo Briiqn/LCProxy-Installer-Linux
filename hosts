@@ -4,4 +4,4 @@
 ::1        localhost ip6-localhost ip6-loopback
 ff02::1    ip6-allnodes
 ff02::2    ip6-allrouters
-198.251.84.251 assetserver.lunarclientprod.com
+192.168.0.10 assetserver.lunarclientprod.com
