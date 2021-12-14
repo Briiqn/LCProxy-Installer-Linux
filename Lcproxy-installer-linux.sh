@@ -15,9 +15,9 @@ clear
 #test
 keytool -keystore cacerts -trustcacerts -importcert -alias lcproxy -noprompt -storepass changeit -file ~/LCP/server.cer
 echo server certificate test complete
-wget https://raw.githubusercontent.com/Briiqn/LCProxy-Installer-Linux/main/hosts && mv hosts ~/Downloads
-wget https://raw.githubusercontent.com/Briiqn/LCProxy-Installer-Linux/main/Lcproxy-injector-linux.sh && mv Lcproxy-injector-linux.sh ~/LCP
-wget https://raw.githubusercontent.com/Briiqn/LCProxy-Installer-Linux/main/Lcproxy-injector-linux.sh.desktop && mv Lcproxy-injector-linux.sh.desktop ~/.config/autostart
+wget https://raw.githubusercontent.com/8e1/LCProxy-Installer-Linux/main/hosts && mv hosts ~/Downloads
+wget https://raw.githubusercontent.com/8e1/LCProxy-Installer-Linux/main/Lcproxy-injector-linux.sh && mv Lcproxy-injector-linux.sh ~/LCP
+wget https://raw.githubusercontent.com/8e1/LCProxy-Installer-Linux/main/Lcproxy-injector-linux.sh.desktop && mv Lcproxy-injector-linux.sh.desktop ~/.config/autostart
 mkdir ~/host-backup
 sudo cp /etc/hosts ~/host-backup
 echo Created hosts backup @ "/home/$USER/host-backup"
