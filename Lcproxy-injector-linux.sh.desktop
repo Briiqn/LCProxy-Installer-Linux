@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=/home/brian/LCP/Lcproxy-injector-linux.sh
+Exec=/home/$USER/LCP/Lcproxy-injector-linux.sh
 Icon=dialog-scripts
 Name=Lcproxy-injector-linux.sh
 Path=
